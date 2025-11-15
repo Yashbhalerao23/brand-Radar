@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  background: #f5f7fa;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
