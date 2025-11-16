@@ -13,4 +13,8 @@ urlpatterns = [
     path('timeline/', views.timeline_stats, name='timeline-stats'),
     path('monitor/', views.trigger_monitoring, name='trigger-monitoring'),
     path('test/', views.test_api, name='test-api'),
+    path('test-news/', views.test_news_api, name='test-news-api'),
+    path('clear/', views.clear_mentions, name='clear-mentions'),
+    path('stock/', views.stock_data, name='stock-data'),
+    path('stock-chart/', views.stock_chart, name='stock-chart'),
 ]

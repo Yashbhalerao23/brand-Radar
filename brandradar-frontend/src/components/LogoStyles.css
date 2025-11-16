@@ -1,0 +1,86 @@
+.brand-radar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-radar-logo h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-logo p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.brand-logo, .brand-logo-xl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.brand-logo-xl {
+  width: 48px;
+  height: 48px;
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.remove-btn {
+  background: rgba(244, 67, 54, 0.2);
+  border: none;
+  color: #f44336;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.brand-item:hover .remove-btn {
+  opacity: 1;
+}
+
+.remove-btn:hover {
+  background: rgba(244, 67, 54, 0.4);
+  transform: scale(1.1);
+}
