@@ -490,3 +490,26 @@ def stock_chart(request):
         return Response({'error': 'Brand not found'}, status=404)
     except Exception as e:
         return Response({'error': str(e)}, status=500)
+
+
+
+@api_view(['GET'])
+def api_root(request):
+    return Response({
+        "message": "BrandRadar API is running!",
+        "routes": {
+            "brands": "/api/brands/",
+            "mentions": "/api/mentions/",
+            "alerts": "/api/alerts/",
+            "stats": "/api/stats/",
+            "topics": "/api/topics/",
+            "sources": "/api/sources/",
+            "timeline": "/api/timeline/",
+            "monitor": "/api/monitor/",
+            "test": "/api/test/",
+            "test-news": "/api/test-news/",
+            "clear": "/api/clear/",
+            "stock": "/api/stock/",
+            "stock-chart": "/api/stock-chart/"
+        }
+    })
