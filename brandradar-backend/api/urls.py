@@ -17,4 +17,7 @@ urlpatterns = [
     path('clear/', views.clear_mentions, name='clear-mentions'),
     path('stock/', views.stock_data, name='stock-data'),
     path('stock-chart/', views.stock_chart, name='stock-chart'),
+    path('admin/', admin.site.urls),
+    path('api/', api_root),
+    path('api/', include('api.urls')),
 ]
