@@ -1,4 +1,5 @@
 import React from 'react';
+import api from "../api";
 
 export const BrandRadarLogo = ({ size = 32 }) => (
   <svg width={size} height={size} viewBox="0 0 100 100" fill="none">
