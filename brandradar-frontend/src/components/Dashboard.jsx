@@ -5,6 +5,8 @@ import { BrandRadarLogo, getBrandLogo } from './BrandLogos';
 import "./Dashboard.css";
 import "./StockStyles.css";
 import "./LogoStyles.css";
+import api from "../api";
+
 
 const Dashboard = () => {
   const [brands, setBrands] = useState([]);
